@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.7.16.min.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js "></script>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script language="javascript" src="js/createMap.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="room"">
+    <img src="img/room.png" />
+    <div class="roomba">
+        <img src="img/roomba.png" />
+    </div>
+    <div>
+        <span>
+            <label>Date(YYYY-MM-DD)</label>
+            <input type="text" id="date" value="YYYY-MM-DD" />
+        </span>
+        <span>
+            <label>Time(HH:MM)</label>
+            <input type="text" id="time" value="HH:MM" />
+        </span>
+        <br />
+        <span>
+            <input type="text" id="duration" value="10" />
+            <label>Duration(min)</label>
+        </span>
+        <span>
+            <input type="text" id="speed" value="1" />
+            <label>speed</label>
+        </span>
+        <input type="button" value="Start" id="startButton" onclick="traceRoomba()" />
+    </div>
+</body>
+</html>
